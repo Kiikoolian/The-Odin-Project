@@ -1,5 +1,6 @@
 .flex-container {
     display: flex; 
+    /* flex-direction: column; */
   }
   
   /* this selector selects all divs inside of .flex-container */
@@ -16,7 +17,7 @@
     flex: 2 1 0%;
   }
 
-  /* only div.two is selected here - container 2 is  */
+  /* only div.two is selected here - container 2 is  not shrink - higher number = more shrinkage */
 .flex-container .two {
     flex-shrink: 0;
   }
