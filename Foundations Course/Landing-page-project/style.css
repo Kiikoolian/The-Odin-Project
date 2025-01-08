@@ -1,16 +1,19 @@
 
+/* Element CSS */
 body{
     display: flex;
     flex-direction: column;
     margin: 0;
+    flex-shrink: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex: 1;
-    padding: 0 8px;
+    padding: 10px 150px;
     margin: 0;
     
 }
@@ -24,15 +27,39 @@ ul{
     padding: 0;
 }
 
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
 a{
     text-decoration-line: none;
     color: #e5e7eb;
     font-size: 18px;
 }
 
+button{
+    background-color: #3882f6;
+    border-radius: 5px;
+    border: none;
+    color: #e5e7eb;
+    padding: 5px 20px;
+    /* width: 90px;
+    height: 25px;     */
+    font-size: 18px;
+}
+
+ /* Class CSS */
 
 
-.header{
+
+
+.header,.footer{
     
     background-color: #1f2937;
     font-size: 24px;
@@ -40,30 +67,34 @@ a{
     
 } 
 
-
-.hero-header{
-    font-size: 48px;
-    font-weight: 900;
-    color: #f9faf8;
-}
-
-.hero-body{
-    font-size: 18px;
-    color: #e5e7eb;
-    
-}
-
+/*  hero CSS */
 .hero{
     display: flex;    
     flex-wrap: wrap;
     gap: 100px;
     justify-content: center;
     padding: 50px ;
+    
+}
+
+.hero-header{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+    padding: 0 100px 0 0  ;
+}
+
+.hero-body{
+    font-size: 18px;
+    color: #e5e7eb;
+    margin: 20px 0;
+    padding: 0;    
 }
 
 .hero-text{    
     flex-shrink: 0;
-    width: 400px;
+    width: 500px;
+    
 }
 
 .schematic{
@@ -71,6 +102,126 @@ a{
     height: 200px;
 }
 
-button{
-    color: #3882f6;
+/*  body CSS */
+
+
+.body{
+    display: flex;    
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.title{
+    justify-items: center;
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937;
+}
+
+
+.cards{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    margin-bottom: 75px;
+}
+.card-img{
+    display: flex;
+    outline-color: #3882f6;
+    outline-style: solid;
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-text{
+    display: flex;
+    align-self: flex-end;
+    max-width: 200px;
+    text-align: center ;
+    margin-top: 20px;
+}
+
+
+/*  thor CSS */
+
+.thor{
+    background-color: #E5e7eb;
+    font-size: 36px;
+    font-style: italic;
+    color: #1f2937;
+    padding: 75px 150px ;
+}
+
+.quote{
+    margin: 0;
+    padding: 0;
+}
+
+.quoting{
+    display: flex;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-weight: 900;
+    justify-content: end;
+    font-size: 30px;
+}
+
+/* cta CSS */
+
+.cta{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+    padding: 75px 150px;
+}
+
+.cta-container{
+    display: flex;
+    outline: #3882f6;
+    background-color: #3882f6;
+    color: #E5e7eb;    
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.cta-text{
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+
+.cta-text-container{
+    padding: 25px 75px ;
+    font-size:  24px;
+}
+
+.cta-signup-button{
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    outline-style: auto;
+    outline-width: thin;
+    
+}
+
+.cta-signup{
+    display: flex;    
+    align-items: center;
+    margin:  0 25px 0 100px;
+    font-size: 18px;
+}
+
+/* footer CSS */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+    font-size: 20px;
 }
