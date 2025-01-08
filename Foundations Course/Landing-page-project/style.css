@@ -2,22 +2,26 @@
 body{
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
 
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 1;
     padding: 0 8px;
+    margin: 0;
+    
 }
 
 ul{
     display: flex;
     list-style: none;
-    gap: 8px;
+    gap: 16px;
     align-items: center;
-    
+    margin: 0;
+    padding: 0;
 }
 
 a{
@@ -26,9 +30,47 @@ a{
     font-size: 18px;
 }
 
+
+
 .header{
-    display: flex;
+    
     background-color: #1f2937;
     font-size: 24px;
     color: #f9faf8;
+    
 } 
+
+
+.hero-header{
+    font-size: 48px;
+    font-weight: 900;
+    color: #f9faf8;
+}
+
+.hero-body{
+    font-size: 18px;
+    color: #e5e7eb;
+    
+}
+
+.hero{
+    display: flex;    
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+    padding: 50px ;
+}
+
+.hero-text{    
+    flex-shrink: 0;
+    width: 400px;
+}
+
+.schematic{
+    width: 500px;
+    height: 200px;
+}
+
+button{
+    color: #3882f6;
+}
